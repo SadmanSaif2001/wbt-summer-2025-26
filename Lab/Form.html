@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+    <form method="post">
+      <fieldset>
+        <legend>Contact Me</legend>
+        <table>
+          <tr>
+            <td><label for="fname">First Name:</label></td>
+            <td><input type="text" id="fname" name="fname" required /></td>
+          </tr>
+          <tr>
+            <td><label for="lname">Last Name:</label></td>
+            <td><input type="text" id="lname" name="lname" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Services</legend>
+        <table>
+          <tr>
+            <td><label for="services">Services:</label></td>
+            <td>
+              <select id="services" name="services">
+                <option>Web Development</option>
+                <option>AI / ML</option>
+                <option>Backend</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Reason of Contact</legend>
+        <table>
+          <tr>
+            <td><label for="reason">Reason of Contact:</label></td>
+            <td>
+              <select id="reason" name="reason">
+                <option>Job</option>
+                <option>Project</option>
+                <option>Thesis</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Booking Slot</legend>
+        <table>
+          <tr>
+            <td><label for="date">Date:</label></td>
+            <td><input type="date" id="date" name="date" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

@@ -1,134 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Create Your Account</title>
-  </head>
-  <body>
-    <form>
-      <table align="center" border="0" cellpadding="10" width="500">
-        <tr>
-          <td colspan="2">
-            <div>
-              <h1>Create your account</h1>
-              <p>Join us in a couple of steps.</p>
-            </div>
-          </td>
-        </tr>
 
-        <tr>
-          <td colspan="2">
-            <div>
-              <label><b>Full name</b></label
-              ><br /><br />
-              <input
-                type="text"
-                name="fullname"
-                placeholder="Jane Doe"
-                style="width: 100%"
-              />
-            </div>
-          </td>
-        </tr>
+<head>
+    <title>Registration</title>
+</head>
 
-        <tr>
-          <td colspan="2">
-            <div>
-              <label><b>Age</b></label
-              ><br /><br />
-              <input
-                type="number"
-                name="age"
-                placeholder="28"
-                style="width: 100%"
-              />
-            </div>
-          </td>
-        </tr>
+<body>
+    <form method="post">
+        <h1>Registration</h1>
+        <p>Please complete all fields below.</p>
 
-        <tr>
-          <td colspan="2">
-            <div>
-              <label><b>Date of Birth</b></label
-              ><br /><br />
-              <input type="date" name="dob" style="width: 100%" />
-            </div>
-          </td>
-        </tr>
+        <div class="field">
+            <label for="fname">Full Name</label><br>
+            <input type="text" id="fname" placeholder="khandaker Sadman Saif">
+        </div>
 
-        <tr>
-          <td colspan="2">
-            <div>
-              <label><b>Email Address</b></label
-              ><br /><br />
-              <input
-                type="email"
-                name="email"
-                placeholder="jane@example.com"
-                style="width: 100%"
-              />
-            </div>
-          </td>
-        </tr>
+        <div class="field">
+            <label for="code">Postal Code</label><br>
+            <select id="code" name="code">
+                <option value="">3001</option>
+                <option value="3001">3001</option>
+                <option value="3002">3002</option>
+                <option value="3003">3003</option>
+                <option value="3004">3004</option>
+                <option value="3005">3005</option>
+            </select>
+        </div>
 
-        <tr>
-          <td colspan="2">
-            <div>
-              <label><b>Password</b></label
-              ><br /><br />
-              <input
-                type="password"
-                name="password"
-                placeholder="****"
-                style="width: 100%"
-              />
-            </div>
-          </td>
-        </tr>
+        <div class="field">
+            <label for="date">Date of Birth</label><br>
+            <input type="date" id="date">
+        </div>
 
-        <tr>
-          <td colspan="2">
-            <div>
-              <label><b>Preferred Contact</b></label
-              ><br /><br />
+        <div class="field">
+            <label for="mail">Email Address</label><br>
+            <input type="email" id="mail" placeholder="sadmansaif102030@gmail.com">
+        </div>
 
-              <input type="radio" name="contact" value="Email" checked /> Email
-              &nbsp;&nbsp;
+        <div class="field">
+            <label for="pass">Password</label><br>
+            <input type="password" id="pass" placeholder="********">
+        </div>
 
-              <input type="radio" name="contact" value="Phone" /> Phone
-              &nbsp;&nbsp;
+        <div class="field">
+            <label for="country">Country</label><br>
+            <select id="country" name="country">
+                <option value="">Select a country...</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+                <option value="japan">Japan</option>
+                <option value="nepal">Nepal</option>
+            </select>
+        </div><br>
 
-              <input type="radio" name="contact" value="SMS" /> SMS
-            </div>
-          </td>
-        </tr>
+        <div class="btn">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
 
-        <tr>
-          <td>
-            <div>
-              <input
-                type="submit"
-                value="Submit"
-                style="
-                  width: 100%;
-                  height: 40px;
-                  background: #0d6efd;
-                  color: white;
-                "
-              />
-            </div>
-          </td>
-
-          <td>
-            <div>
-              <input
-                type="reset"
-                value="Reset"
-                style="width: 100%; height: 40px"
-              />
-            </div>
-          </td>
-        </tr>
-      </table>
     </form>
-  </body>
+    </div>
+
+</body>
+
 </html>
